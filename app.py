@@ -25,8 +25,6 @@ def operation_on_stockdata():
          st.write(f"Previous Close: {float(latest_data['Close']):.2f} &nbsp;&nbsp;&nbsp;&nbsp;      Open: {float(latest_data['Open']):.2f} &nbsp;&nbsp;&nbsp;&nbsp; High: {float(latest_data['High']):.2f}  &nbsp;&nbsp;&nbsp;&nbsp;     Low: {float(latest_data['Low']):.2f}")
          st.write(f"52-Week High: {float(year_high):.2f} &nbsp;&nbsp;&nbsp;&nbsp; 52-Week Low: {float(year_low):.2f} &nbsp;&nbsp;&nbsp;&nbsp;Volume: {int(latest_data['Volume']):,}")
 
-
-
 if data.empty:
     st.error(f"No data found for {ticker_data} between {start_date} and {end_date}.")
 else:    
